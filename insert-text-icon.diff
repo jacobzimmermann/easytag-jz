@@ -1,0 +1,11 @@
+Binary files src.old/data/images/insert-text.png and src/data/images/insert-text.png differ
+diff -ruN src.old/data/org.gnome.EasyTAG.gresource.xml src/data/org.gnome.EasyTAG.gresource.xml
+--- src.old/data/org.gnome.EasyTAG.gresource.xml	2016-07-14 07:34:16.000000000 +0000
++++ src/data/org.gnome.EasyTAG.gresource.xml	2017-09-24 23:37:21.103969932 +0000
+@@ -29,5 +29,6 @@
+         <file preprocess='to-pixdata'>images/red-lines.png</file>
+         <file preprocess='to-pixdata'>images/sequence-track.png</file>
+         <file preprocess='to-pixdata'>images/unselect-all.png</file>
++        <file preprocess='to-pixdata'>images/insert-text.png</file>
+     </gresource>
+ </gresources>
