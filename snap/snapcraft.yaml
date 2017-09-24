@@ -1,6 +1,5 @@
-name: gnome-easytag
-version: '2.4.3-4'
-epoch: 2
+name: easytag-jz
+version: '2.4.3-0'
 summary: Simple application for viewing and editing tags in audio files.
 description: |
   EasyTAG is a simple application for viewing and editing tags in audio files.
@@ -15,7 +14,6 @@ slots:
     interface: dbus
     name: org.gnome.EasyTAG
     bus: session
-
 
 plugs:
     gnome-3-26-1604:
@@ -51,6 +49,7 @@ parts:
       - libwavpack-dev
       - yelp-tools
       - zlib1g-dev
+      - gnome-icon-theme
     organize:
       share/glib-2.0/schemas/*: usr/share/glib-2.0/schemas/
       share/icons: usr/share/
