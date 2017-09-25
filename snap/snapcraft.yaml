@@ -22,9 +22,9 @@ plugs:
       default-provider: gnome-3-26-1604:gnome-3-26-1604
 
 apps:
-  gnome-easytag:
+  easytag-jz:
     command: desktop-launch easytag
-    plugs: [unity7, home, gsettings, gnome-3-26-1604]
+    plugs: [unity7, home, gsettings, gnome-3-26-1604, removable-media]
     slots: [dbus-easytag]
 
 parts:
@@ -50,6 +50,12 @@ parts:
       - yelp-tools
       - zlib1g-dev
       - gnome-icon-theme
+    prepare: |
+      cp -v ../../../insert-text.png data/images/
+      for p in ../../../*.diff
+      do
+        cat $p | patch -p1
+      done
     organize:
       share/glib-2.0/schemas/*: usr/share/glib-2.0/schemas/
       share/icons: usr/share/
