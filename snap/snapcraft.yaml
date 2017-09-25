@@ -49,13 +49,6 @@ parts:
       - libwavpack-dev
       - yelp-tools
       - zlib1g-dev
-      - gnome-icon-theme
-    prepare: |
-      cp -v ../../../insert-text.png data/images/
-      for p in ../../../*.diff
-      do
-        cat $p | patch -p1
-      done
     organize:
       share/glib-2.0/schemas/*: usr/share/glib-2.0/schemas/
       share/icons: usr/share/
@@ -65,6 +58,12 @@ parts:
     prime:
       - -share
     after: [desktop-gnome-platform]
+
+  icons:
+    plugin: dump
+    source: .
+    organize:
+      icons: usr/share/icons
 
   # workaround snapcraft trying to outsmart us by copying ldd listed libraries
   workaround:
