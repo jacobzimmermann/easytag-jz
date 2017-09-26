@@ -7,7 +7,7 @@ description: |
   MusePack, Monkey's Audio, and WavPack files.
 
 grade: stable
-confinement: strict
+confinement: devmode
 
 slots:
   dbus-easytag:
@@ -57,6 +57,14 @@ parts:
       share/appdata: usr/share
     prime:
       - -share
+      - -usr/share/el/easytag/media/icon.png
+      - -usr/share/sv/easytag/media/icon.png
+      - -usr/share/cs/easytag/media/icon.png
+      - -usr/share/ca/easytag/media/icon.png
+      - -usr/share/hu/easytag/media/icon.png
+      - -usr/share/de/easytag/media/icon.png
+      - -usr/share/fr/easytag/media/icon.png
+      - -usr/share/es/easytag/media/icon.png
     after: [desktop-gnome-platform]
 
   icons:
