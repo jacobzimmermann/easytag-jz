@@ -8,6 +8,6 @@ Type=Application
 Icon=${SNAP}/meta/gui/icon.svg
 Categories=GTK;AudioVideo;AudioVideoEditing;Audio;
 MimeType=inode/directory;audio/x-mp3;audio/x-mpeg;audio/mpeg;application/ogg;audio/x-vorbis+ogg;audio/x-flac;audio/x-musepack;audio/x-ape;audio/x-speex+ogg;audio/x-opus+ogg;
-Exec=gnome-easytag %F
+Exec=easytag-jz %F
 Terminal=false
 StartupNotify=true
