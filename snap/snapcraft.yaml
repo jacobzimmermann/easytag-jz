@@ -24,7 +24,7 @@ plugs:
 apps:
   easytag-jz:
     command: desktop-launch easytag
-    plugs: [unity7, home, gsettings, gnome-3-26-1604, removable-media]
+    plugs: [unity7, home, gsettings, gnome-3-26-1604, removable-media, network]
     slots: [dbus-easytag]
 
 parts:
