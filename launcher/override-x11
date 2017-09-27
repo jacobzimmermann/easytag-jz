@@ -1,0 +1,4 @@
+#!/bin/sh -e
+export GDK_BACKEND=x11
+exec easytag "$@"
+
